@@ -1,6 +1,6 @@
 //
 //  LoginCoordinator.swift
-//  SwiftUICoordinator
+//  SwiftUI_TemplateTests
 //
 //  Created by Dave on 1/12/19.
 //  Copyright © 2019 roboheadz. All rights reserved.
@@ -10,6 +10,7 @@ import Foundation
 import SwiftUI
 
 class LoginCoordinator {
+    
     private let services: Services
     
     init(services: Services) {
@@ -28,9 +29,11 @@ class LoginCoordinator {
 }
 
 extension LoginCoordinator: LoginViewDelegate {
+    
     func loginDetailView() -> AnyView {
         return AnyView(
             Text("Main detail view")
         )
     }
+    
 }

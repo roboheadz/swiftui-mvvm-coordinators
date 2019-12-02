@@ -12,6 +12,7 @@ protocol ProfileViewDelegate: class {
 }
 
 struct ProfileView: View {
+    
     weak var delegate: ProfileViewDelegate?
     var viewModel: ProfileViewModel
     
@@ -29,8 +30,10 @@ struct ProfileView: View {
 }
 
 struct ProfileViewPreviews: PreviewProvider {
+    
     static var previews: some View {
         let mainViewModel = ProfileViewModel(services: AppServices())
         return ProfileView(delegate: nil, viewModel: mainViewModel)
     }
+    
 }

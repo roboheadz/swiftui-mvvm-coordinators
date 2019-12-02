@@ -1,6 +1,6 @@
 //
 //  MainViewModel.swift
-//  SwiftUICoordinator
+//  SwiftUI_TemplateTests
 //
 //  Created by Dave on 1/12/19.
 //  Copyright © 2019 roboheadz. All rights reserved.
@@ -24,5 +24,6 @@ class LoginViewModel: ObservableObject {
     public func login() {
         self.services.dataManager.loggedIn = true
     }
+    
 }
     

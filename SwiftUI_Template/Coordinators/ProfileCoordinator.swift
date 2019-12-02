@@ -10,6 +10,7 @@ import Foundation
 import SwiftUI
 
 class ProfileCoordinator {
+    
     private let services: Services
     
     init(services: Services) {
@@ -25,6 +26,7 @@ class ProfileCoordinator {
         let profileView = ProfileView(delegate: self, viewModel: profileViewModel)
         return AnyView(profileView)
     }
+    
 }
 
 extension ProfileCoordinator: ProfileViewDelegate {

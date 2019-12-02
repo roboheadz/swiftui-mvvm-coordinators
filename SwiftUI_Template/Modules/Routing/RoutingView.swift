@@ -1,6 +1,6 @@
 //
 //  RoutingView.swift
-//  SwiftUICoordinator
+//  SwiftUI_TemplateTests
 //
 //  Created by Dave on 1/12/19.
 //  Copyright © 2019 roboheadz. All rights reserved.
@@ -15,6 +15,7 @@ protocol RoutingViewDelegate: class {
 }
 
 struct RoutingView: View {
+    
     weak var delegate: RoutingViewDelegate?
     @ObservedObject var viewModel: RoutingViewModel
     
@@ -27,13 +28,16 @@ struct RoutingView: View {
             }
         }
     }
+    
 }
 
 struct RoutingView_Previews: PreviewProvider {
+    
     static var previews: some View {
         let services = AppServices()
         let routingViewModel = RoutingViewModel(services: services)
         let appCoordinator = AppCoordinator(services: services)
         return RoutingView(delegate: appCoordinator,viewModel: routingViewModel)
     }
+    
 }

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SwiftUICoordinator
+//  SwiftUI_TemplateTests
 //
 //  Created by Dave on 24/11/19.
 //  Copyright © 2019 roboheadz. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  LoginView.swift
-//  SwiftUICoordinator
+//  SwiftUI_TemplateTests
 //
 //  Created by Dave on 24/11/19.
 //  Copyright © 2019 roboheadz. All rights reserved.
@@ -13,6 +13,7 @@ protocol LoginViewDelegate: class {
 }
 
 struct LoginView: View {
+    
     weak var delegate: LoginViewDelegate?
     var viewModel: LoginViewModel
     
@@ -27,11 +28,14 @@ struct LoginView: View {
             Spacer()
            }
     }
+    
 }
 
 struct LoginView_Previews: PreviewProvider {
+    
     static var previews: some View {
         let mainViewModel = LoginViewModel(services: AppServices())
         return LoginView(delegate: nil, viewModel: mainViewModel)
     }
+    
 }

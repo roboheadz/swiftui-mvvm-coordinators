@@ -1,6 +1,6 @@
 //
 //  AppCoordinator.swift
-//  SwiftUICoordinator
+//  SwiftUI_TemplateTests
 //
 //  Created by Dave on 1/12/19.
 //  Copyright © 2019 roboheadz. All rights reserved.
@@ -10,6 +10,7 @@ import Foundation
 import SwiftUI
 
 class AppCoordinator {
+    
     private let services: Services
     
     lazy var loginCoordinator: LoginCoordinator = {
@@ -33,9 +34,11 @@ class AppCoordinator {
         let routingView = RoutingView(delegate: self, viewModel: routingViewModel)
         return AnyView(routingView)
     }
+    
 }
 
 extension AppCoordinator: RoutingViewDelegate {
+    
     func loggedInView() -> AnyView {
         return self.profileCoordinator.rootView()
     }
@@ -43,4 +46,5 @@ extension AppCoordinator: RoutingViewDelegate {
     func notLoggedInView() -> AnyView {
         return self.loginCoordinator.rootView()
     }
+    
 }

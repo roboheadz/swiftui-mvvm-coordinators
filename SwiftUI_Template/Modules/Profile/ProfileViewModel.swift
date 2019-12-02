@@ -24,5 +24,6 @@ class ProfileViewModel: ObservableObject {
     public func logout() {
         self.services.dataManager.loggedIn = false
     }
+    
 }
     

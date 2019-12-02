@@ -24,6 +24,9 @@
 		55575A26239357DD00C6E791 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A25239357DD00C6E791 /* ProfileViewModel.swift */; };
 		55575A282393596800C6E791 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A272393596800C6E791 /* ProfileCoordinator.swift */; };
 		55575A3023938C9000C6E791 /* RoutingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A2F23938C9000C6E791 /* RoutingViewModelTests.swift */; };
+		55A20E1023951A92006D13A1 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A20E0F23951A92006D13A1 /* TestHelper.swift */; };
+		55A20E1423951AE6006D13A1 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A20E1323951AE6006D13A1 /* LoginViewModelTests.swift */; };
+		55A20E172395205C006D13A1 /* ProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A20E162395205C006D13A1 /* ProfileViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		55575A2D23938C9000C6E791 /* SwiftUI_TemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_TemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55575A2F23938C9000C6E791 /* RoutingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingViewModelTests.swift; sourceTree = "<group>"; };
 		55575A3123938C9000C6E791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55A20E0F23951A92006D13A1 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		55A20E1323951AE6006D13A1 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		55A20E162395205C006D13A1 /* ProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,10 +185,37 @@
 		55575A2E23938C9000C6E791 /* SwiftUI_TemplateTests */ = {
 			isa = PBXGroup;
 			children = (
-				55575A2F23938C9000C6E791 /* RoutingViewModelTests.swift */,
 				55575A3123938C9000C6E791 /* Info.plist */,
+				55A20E0F23951A92006D13A1 /* TestHelper.swift */,
+				55A20E1223951AD5006D13A1 /* LoginTests */,
+				55A20E152395204D006D13A1 /* ProfileTests */,
+				55A20E1123951A9A006D13A1 /* RoutingTests */,
 			);
 			path = SwiftUI_TemplateTests;
+			sourceTree = "<group>";
+		};
+		55A20E1123951A9A006D13A1 /* RoutingTests */ = {
+			isa = PBXGroup;
+			children = (
+				55575A2F23938C9000C6E791 /* RoutingViewModelTests.swift */,
+			);
+			path = RoutingTests;
+			sourceTree = "<group>";
+		};
+		55A20E1223951AD5006D13A1 /* LoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				55A20E1323951AE6006D13A1 /* LoginViewModelTests.swift */,
+			);
+			path = LoginTests;
+			sourceTree = "<group>";
+		};
+		55A20E152395204D006D13A1 /* ProfileTests */ = {
+			isa = PBXGroup;
+			children = (
+				55A20E162395205C006D13A1 /* ProfileViewModelTests.swift */,
+			);
+			path = ProfileTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +339,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55A20E1423951AE6006D13A1 /* LoginViewModelTests.swift in Sources */,
+				55A20E1023951A92006D13A1 /* TestHelper.swift in Sources */,
+				55A20E172395205C006D13A1 /* ProfileViewModelTests.swift in Sources */,
 				55575A3023938C9000C6E791 /* RoutingViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
