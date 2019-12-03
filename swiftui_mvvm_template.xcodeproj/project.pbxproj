@@ -20,8 +20,8 @@
 		55575A1B23934C6400C6E791 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A1A23934C6400C6E791 /* AppCoordinator.swift */; };
 		55575A1E23934CFD00C6E791 /* RoutingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A1D23934CFD00C6E791 /* RoutingView.swift */; };
 		55575A2023934D1000C6E791 /* RoutingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A1F23934D1000C6E791 /* RoutingViewModel.swift */; };
-		55575A23239357AD00C6E791 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A22239357AD00C6E791 /* ProfileView.swift */; };
-		55575A26239357DD00C6E791 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A25239357DD00C6E791 /* ProfileViewModel.swift */; };
+		55575A23239357AD00C6E791 /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A22239357AD00C6E791 /* LogoutView.swift */; };
+		55575A26239357DD00C6E791 /* LogoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A25239357DD00C6E791 /* LogoutViewModel.swift */; };
 		55575A282393596800C6E791 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A272393596800C6E791 /* ProfileCoordinator.swift */; };
 		55575A3023938C9000C6E791 /* RoutingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A2F23938C9000C6E791 /* RoutingViewModelTests.swift */; };
 		55A20E1023951A92006D13A1 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A20E0F23951A92006D13A1 /* TestHelper.swift */; };
@@ -55,12 +55,13 @@
 		55575A1A23934C6400C6E791 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		55575A1D23934CFD00C6E791 /* RoutingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingView.swift; sourceTree = "<group>"; };
 		55575A1F23934D1000C6E791 /* RoutingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingViewModel.swift; sourceTree = "<group>"; };
-		55575A22239357AD00C6E791 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		55575A25239357DD00C6E791 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		55575A22239357AD00C6E791 /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
+		55575A25239357DD00C6E791 /* LogoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewModel.swift; sourceTree = "<group>"; };
 		55575A272393596800C6E791 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		55575A2D23938C9000C6E791 /* swiftui_mvvm_templateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftui_mvvm_templateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55575A2F23938C9000C6E791 /* RoutingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingViewModelTests.swift; sourceTree = "<group>"; };
 		55575A3123938C9000C6E791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		556863252396754000322341 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		55A20E0F23951A92006D13A1 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		55A20E1323951AE6006D13A1 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		55A20E162395205C006D13A1 /* ProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelTests.swift; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 		554B678F2389B7FE009BE3EF = {
 			isa = PBXGroup;
 			children = (
+				556863252396754000322341 /* README.md */,
 				554B679A2389B7FE009BE3EF /* swiftui_mvvm_template */,
 				55575A2E23938C9000C6E791 /* swiftui_mvvm_template_tests */,
 				554B67992389B7FE009BE3EF /* Products */,
@@ -159,7 +161,7 @@
 			children = (
 				55575A2123934D1300C6E791 /* Routing */,
 				55575A142393489A00C6E791 /* Login */,
-				55575A24239357B600C6E791 /* Profile */,
+				55575A24239357B600C6E791 /* Logout */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -173,13 +175,13 @@
 			path = Routing;
 			sourceTree = "<group>";
 		};
-		55575A24239357B600C6E791 /* Profile */ = {
+		55575A24239357B600C6E791 /* Logout */ = {
 			isa = PBXGroup;
 			children = (
-				55575A22239357AD00C6E791 /* ProfileView.swift */,
-				55575A25239357DD00C6E791 /* ProfileViewModel.swift */,
+				55575A22239357AD00C6E791 /* LogoutView.swift */,
+				55575A25239357DD00C6E791 /* LogoutViewModel.swift */,
 			);
-			path = Profile;
+			path = Logout;
 			sourceTree = "<group>";
 		};
 		55575A2E23938C9000C6E791 /* swiftui_mvvm_template_tests */ = {
@@ -325,12 +327,12 @@
 				55575A13239345BF00C6E791 /* DataManager.swift in Sources */,
 				55575A102393458300C6E791 /* Services.swift in Sources */,
 				55575A2023934D1000C6E791 /* RoutingViewModel.swift in Sources */,
-				55575A26239357DD00C6E791 /* ProfileViewModel.swift in Sources */,
+				55575A26239357DD00C6E791 /* LogoutViewModel.swift in Sources */,
 				55575A1B23934C6400C6E791 /* AppCoordinator.swift in Sources */,
 				55575A282393596800C6E791 /* ProfileCoordinator.swift in Sources */,
 				554B679E2389B7FE009BE3EF /* SceneDelegate.swift in Sources */,
 				55575A162393491800C6E791 /* LoginCoordinator.swift in Sources */,
-				55575A23239357AD00C6E791 /* ProfileView.swift in Sources */,
+				55575A23239357AD00C6E791 /* LogoutView.swift in Sources */,
 				554B67A02389B7FE009BE3EF /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

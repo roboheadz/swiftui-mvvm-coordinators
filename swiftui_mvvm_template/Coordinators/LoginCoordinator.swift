@@ -1,6 +1,6 @@
 //
 //  LoginCoordinator.swift
-//  SwiftUI_mvvm_template_tests
+//  swiftui_mvvm_template_tests
 //
 //  Created by Dave on 1/12/19.
 //  Copyright © 2019 roboheadz. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  ProfileCoordinator.swift
-//  SwiftUI_mvvm_template
+//  swiftui_mvvm_template
 //
 //  Created by Dave on 1/12/19.
 //  Copyright © 2019 roboheadz. All rights reserved.
@@ -22,12 +22,12 @@ class ProfileCoordinator {
     }
     
     func rootView() -> AnyView {
-        let profileViewModel = ProfileViewModel(services: self.services)
-        let profileView = ProfileView(delegate: self, viewModel: profileViewModel)
+        let profileViewModel = LogoutViewModel(services: self.services)
+        let profileView = LogoutView(delegate: self, viewModel: profileViewModel)
         return AnyView(profileView)
     }
     
 }
 
-extension ProfileCoordinator: ProfileViewDelegate {
+extension ProfileCoordinator: LogoutViewDelegate {
 }

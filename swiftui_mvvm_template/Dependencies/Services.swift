@@ -1,6 +1,6 @@
 //
 //  Services.swift
-//  SwiftUI_mvvm_template
+//  swiftui_mvvm_template
 //
 //  Created by Dave on 1/12/19.
 //  Copyright © 2019 roboheadz. All rights reserved.

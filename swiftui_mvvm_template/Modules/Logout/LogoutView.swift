@@ -1,6 +1,6 @@
 //
-//  ProfileView.swift
-//  SwiftUI_mvvm_template
+//  LogoutView.swift
+//  swiftui_mvvm_template
 //
 //  Created by Dave on 1/12/19.
 //  Copyright © 2019 roboheadz. All rights reserved.
@@ -8,13 +8,13 @@
 
 import SwiftUI
 
-protocol ProfileViewDelegate: class {
+protocol LogoutViewDelegate: class {
 }
 
-struct ProfileView: View {
+struct LogoutView: View {
     
-    weak var delegate: ProfileViewDelegate?
-    var viewModel: ProfileViewModel
+    weak var delegate: LogoutViewDelegate?
+    var viewModel: LogoutViewModel
     
     var body: some View {
        VStack {
@@ -29,11 +29,11 @@ struct ProfileView: View {
     }
 }
 
-struct ProfileViewPreviews: PreviewProvider {
+struct LogoutViewPreviews: PreviewProvider {
     
     static var previews: some View {
-        let mainViewModel = ProfileViewModel(services: AppServices())
-        return ProfileView(delegate: nil, viewModel: mainViewModel)
+        let mainViewModel = LogoutViewModel(services: AppServices())
+        return LogoutView(delegate: nil, viewModel: mainViewModel)
     }
     
 }

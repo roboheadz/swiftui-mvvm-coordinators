@@ -16,7 +16,7 @@ class ProfileViewModelTests: XCTestCase {
     
     func testRoutingLoggedOut() {
         let services = AppServices()
-        let viewModel = ProfileViewModel(services: services)
+        let viewModel = LogoutViewModel(services: services)
         
         // Given
         services.dataManager.loggedIn = true

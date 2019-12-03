@@ -1,6 +1,6 @@
 //
-//  ProfileViewModel.swift
-//  SwiftUI_mvvm_template
+//  LogoutViewModel.swift
+//  swiftui_mvvm_template
 //
 //  Created by Dave on 1/12/19.
 //  Copyright © 2019 roboheadz. All rights reserved.
@@ -9,7 +9,7 @@
 import Foundation
 import Combine
 
-class ProfileViewModel: ObservableObject {
+class LogoutViewModel: ObservableObject {
     
     private var services: Services
     
