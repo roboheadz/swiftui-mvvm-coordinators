@@ -1,0 +1,26 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+import Combine
+
+class {{ module_info.name }}ViewModel: ObservableObject {
+    
+    private var services: Services
+    private var cancellables: Set<AnyCancellable> = []
+
+    init(services: Services) {
+        self.services = services
+        self.setupBindings()
+    }
+    
+    func setupBindings() {
+        // Configure bindings to observables in the Services struct here
+    }
+    
+}

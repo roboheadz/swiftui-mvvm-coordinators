@@ -1,0 +1,37 @@
+### Headers settings
+company: roboheadz
+
+### Xcode project settings
+project_name: swiftui_mvvm_template
+xcodeproj_path: swiftui_mvvm_template.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: swiftui_mvvm_template
+
+# The file path for new modules
+project_file_path: swiftui_mvvm_template/Modules
+
+# The Xcode group path to new modules
+project_group_path: swiftui_mvvm_template/Modules
+
+### Tests generation settings section
+# The tests target name
+test_target: swiftui_mvvm_templateTests
+
+# The file path for new tests
+test_file_path: swiftui_mvvm_template_tests
+
+# The Xcode group path to new tests
+test_group_path: swiftui_mvvm_template_tests
+
+### Dependencies settings section
+
+cartfile_path: ./Cartfile
+
+### Templates
+templates:
+- {name: SwiftUI_MVVM, local: './Templates/SwiftUI_MVVM'}
+#- {name: remote_template_name, git: 'https://github.com/igrekde/remote_template'}
+#- {name: catalog_template_name}
+

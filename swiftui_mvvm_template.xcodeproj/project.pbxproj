@@ -40,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		554B67982389B7FE009BE3EF /* SwiftUI_mvvm_template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_mvvm_template.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		554B67982389B7FE009BE3EF /* swiftui_mvvm_template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftui_mvvm_template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		554B679B2389B7FE009BE3EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		554B679D2389B7FE009BE3EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		554B679F2389B7FE009BE3EF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		55575A22239357AD00C6E791 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		55575A25239357DD00C6E791 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		55575A272393596800C6E791 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
-		55575A2D23938C9000C6E791 /* SwiftUI_mvvm_templateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_mvvm_templateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55575A2D23938C9000C6E791 /* swiftui_mvvm_templateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftui_mvvm_templateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55575A2F23938C9000C6E791 /* RoutingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingViewModelTests.swift; sourceTree = "<group>"; };
 		55575A3123938C9000C6E791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55A20E0F23951A92006D13A1 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
@@ -87,8 +87,8 @@
 		554B678F2389B7FE009BE3EF = {
 			isa = PBXGroup;
 			children = (
-				554B679A2389B7FE009BE3EF /* SwiftUI_mvvm_template */,
-				55575A2E23938C9000C6E791 /* SwiftUI_mvvm_template_tests */,
+				554B679A2389B7FE009BE3EF /* swiftui_mvvm_template */,
+				55575A2E23938C9000C6E791 /* swiftui_mvvm_template_tests */,
 				554B67992389B7FE009BE3EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,13 +96,13 @@
 		554B67992389B7FE009BE3EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				554B67982389B7FE009BE3EF /* SwiftUI_mvvm_template.app */,
-				55575A2D23938C9000C6E791 /* SwiftUI_mvvm_templateTests.xctest */,
+				554B67982389B7FE009BE3EF /* swiftui_mvvm_template.app */,
+				55575A2D23938C9000C6E791 /* swiftui_mvvm_templateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		554B679A2389B7FE009BE3EF /* SwiftUI_mvvm_template */ = {
+		554B679A2389B7FE009BE3EF /* swiftui_mvvm_template */ = {
 			isa = PBXGroup;
 			children = (
 				554B679B2389B7FE009BE3EF /* AppDelegate.swift */,
@@ -115,7 +115,7 @@
 				554B67A92389B801009BE3EF /* Info.plist */,
 				554B67A32389B801009BE3EF /* Preview Content */,
 			);
-			path = SwiftUI_mvvm_template;
+			path = swiftui_mvvm_template;
 			sourceTree = "<group>";
 		};
 		554B67A32389B801009BE3EF /* Preview Content */ = {
@@ -182,7 +182,7 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		55575A2E23938C9000C6E791 /* SwiftUI_mvvm_template_tests */ = {
+		55575A2E23938C9000C6E791 /* swiftui_mvvm_template_tests */ = {
 			isa = PBXGroup;
 			children = (
 				55575A3123938C9000C6E791 /* Info.plist */,
@@ -191,7 +191,7 @@
 				55A20E152395204D006D13A1 /* ProfileTests */,
 				55A20E1123951A9A006D13A1 /* RoutingTests */,
 			);
-			path = SwiftUI_mvvm_template_tests;
+			path = swiftui_mvvm_template_tests;
 			sourceTree = "<group>";
 		};
 		55A20E1123951A9A006D13A1 /* RoutingTests */ = {
@@ -221,9 +221,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		554B67972389B7FE009BE3EF /* SwiftUI_mvvm_template */ = {
+		554B67972389B7FE009BE3EF /* swiftui_mvvm_template */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 554B67AC2389B801009BE3EF /* Build configuration list for PBXNativeTarget "SwiftUI_mvvm_template" */;
+			buildConfigurationList = 554B67AC2389B801009BE3EF /* Build configuration list for PBXNativeTarget "swiftui_mvvm_template" */;
 			buildPhases = (
 				554B67942389B7FE009BE3EF /* Sources */,
 				554B67952389B7FE009BE3EF /* Frameworks */,
@@ -233,14 +233,14 @@
 			);
 			dependencies = (
 			);
-			name = SwiftUI_mvvm_template;
+			name = swiftui_mvvm_template;
 			productName = SwiftUICoordinator;
-			productReference = 554B67982389B7FE009BE3EF /* SwiftUI_mvvm_template.app */;
+			productReference = 554B67982389B7FE009BE3EF /* swiftui_mvvm_template.app */;
 			productType = "com.apple.product-type.application";
 		};
-		55575A2C23938C9000C6E791 /* SwiftUI_mvvm_templateTests */ = {
+		55575A2C23938C9000C6E791 /* swiftui_mvvm_templateTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55575A3423938C9000C6E791 /* Build configuration list for PBXNativeTarget "SwiftUI_mvvm_templateTests" */;
+			buildConfigurationList = 55575A3423938C9000C6E791 /* Build configuration list for PBXNativeTarget "swiftui_mvvm_templateTests" */;
 			buildPhases = (
 				55575A2923938C9000C6E791 /* Sources */,
 				55575A2A23938C9000C6E791 /* Frameworks */,
@@ -251,9 +251,9 @@
 			dependencies = (
 				55575A3323938C9000C6E791 /* PBXTargetDependency */,
 			);
-			name = SwiftUI_mvvm_templateTests;
+			name = swiftui_mvvm_templateTests;
 			productName = SwiftUI_TemplateTests;
-			productReference = 55575A2D23938C9000C6E791 /* SwiftUI_mvvm_templateTests.xctest */;
+			productReference = 55575A2D23938C9000C6E791 /* swiftui_mvvm_templateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -275,7 +275,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 554B67932389B7FE009BE3EF /* Build configuration list for PBXProject "SwiftUI_mvvm_template" */;
+			buildConfigurationList = 554B67932389B7FE009BE3EF /* Build configuration list for PBXProject "swiftui_mvvm_template" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -288,8 +288,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				554B67972389B7FE009BE3EF /* SwiftUI_mvvm_template */,
-				55575A2C23938C9000C6E791 /* SwiftUI_mvvm_templateTests */,
+				554B67972389B7FE009BE3EF /* swiftui_mvvm_template */,
+				55575A2C23938C9000C6E791 /* swiftui_mvvm_templateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -351,7 +351,7 @@
 /* Begin PBXTargetDependency section */
 		55575A3323938C9000C6E791 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 554B67972389B7FE009BE3EF /* SwiftUI_mvvm_template */;
+			target = 554B67972389B7FE009BE3EF /* swiftui_mvvm_template */;
 			targetProxy = 55575A3223938C9000C6E791 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -538,7 +538,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI_mvvm_template.app/SwiftUI_mvvm_template";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftui_mvvm_template.app/swiftui_mvvm_template";
 			};
 			name = Debug;
 		};
@@ -558,14 +558,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI_mvvm_template.app/SwiftUI_mvvm_template";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftui_mvvm_template.app/swiftui_mvvm_template";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		554B67932389B7FE009BE3EF /* Build configuration list for PBXProject "SwiftUI_mvvm_template" */ = {
+		554B67932389B7FE009BE3EF /* Build configuration list for PBXProject "swiftui_mvvm_template" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				554B67AA2389B801009BE3EF /* Debug */,
@@ -574,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		554B67AC2389B801009BE3EF /* Build configuration list for PBXNativeTarget "SwiftUI_mvvm_template" */ = {
+		554B67AC2389B801009BE3EF /* Build configuration list for PBXNativeTarget "swiftui_mvvm_template" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				554B67AD2389B801009BE3EF /* Debug */,
@@ -583,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55575A3423938C9000C6E791 /* Build configuration list for PBXNativeTarget "SwiftUI_mvvm_templateTests" */ = {
+		55575A3423938C9000C6E791 /* Build configuration list for PBXNativeTarget "swiftui_mvvm_templateTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55575A3523938C9000C6E791 /* Debug */,

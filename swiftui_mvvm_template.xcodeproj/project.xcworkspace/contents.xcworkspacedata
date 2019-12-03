@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/dave/src/swiftui-mvvm-template/SwiftUI_mvvm_template.xcodeproj">
+      location = "self:/Users/dave/src/swiftui-mvvm-template/swiftui_mvvm_template.xcodeproj">
    </FileRef>
 </Workspace>

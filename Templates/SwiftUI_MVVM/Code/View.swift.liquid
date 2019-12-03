@@ -1,0 +1,34 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+import SwiftUI
+
+protocol {{ module_info.name }}ViewDelegate: class {
+}
+
+struct {{ module_info.name }}View: View {
+    
+    weak var delegate: {{ module_info.name }}ViewDelegate?
+    @ObservedObject var viewModel: {{ module_info.name }}ViewModel
+    
+    var body: some View {
+        Text("Add your view here!")
+    }
+    
+}
+
+struct {{ module_info.name }}_Previews: PreviewProvider {
+    
+    static var previews: some View {
+        let services = AppServices()
+        let viewModel = {{ module_info.name }}ViewModel(services: services)
+        return {{ module_info.name }}View(delegate: nil,viewModel: viewModel)
+    }
+    
+}

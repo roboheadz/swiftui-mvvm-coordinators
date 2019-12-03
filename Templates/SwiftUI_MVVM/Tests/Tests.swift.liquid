@@ -1,0 +1,29 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import XCTest
+import Combine
+
+@testable import {{ module_info.project_name }}
+
+class {{ module_info.name }}Tests: XCTestCase {
+
+    func testSomething() {
+       let viewModel = RoutingViewModel(services: AppServices())
+       
+       // Given
+       
+       // When
+
+       // Wait for the messages to be recieved
+       TestHelper.waitForMainLoop(0.1)
+       
+       // Then
+   }
+   
+}

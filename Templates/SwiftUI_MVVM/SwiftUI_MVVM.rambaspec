@@ -1,0 +1,22 @@
+# Template information section
+name: "SwiftUI_MVVM"
+summary: "SwiftUI MVVM module template."
+author: "David Wood"
+version: "1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+
+# View
+- {name: View.swift, path: Code/View.swift.liquid, custom_name: "{{ module_info.name }}View.swift"}
+
+# View Model
+- {name: ViewModel.swift, path: Code/ViewModel.swift.liquid, custom_name: "{{ module_info.name }}ViewModel.swift"}
+
+# The declarations for test files
+test_files:
+
+# ViewModel tests
+- {name: Tests.swift, path: Tests/Tests.swift.liquid, custom_name: "{{ module_info.name }}Tests.swift"}
