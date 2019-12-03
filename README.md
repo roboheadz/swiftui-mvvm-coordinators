@@ -3,7 +3,7 @@ Template MVVM app architecture, with coordinators and global manager objects.
 
 This provides a template app project for SwiftUI, with an MVVM-C (Model, View, ViewModel and Coordinator) architecture.  
 
-A bare bones project, this illustrates how an app can be configured with global manager objects that are observalble. View Models bind themselves to manager object properties and update their own Published variables for the SwiftUI view to observe and bind itself to. This provides a simple configuration of responsibilites.
+A bare bones project, this illustrates how an app can be configured with global manager objects that are observable. View Models bind themselves to manager object properties and update their own Published variables for the SwiftUI view to observe and bind itself to. This provides a simple configuration of responsibilities.
 
 This template developed by David Wood. It is supplied without any support or liability implied. PRs/suggestions are welcome, and David can be reached at https://twitter.com/davidgarywood
 
@@ -22,7 +22,7 @@ Defines the state and business for each module. The View links to the ViewModel 
 Our Coordinator objects are the delegates for each View, they provide destination views for navgation links etc.
 
 ### Services + Managers
-The project has a global Services struct which is injected into each module's ViewModel. This provides each module with access to all manager classes linked off of this struct.
+The project has a global Services struct which is injected into each module's ViewModel. This provides each module with access to all manager classes linked from this struct.
 
 Manager classes talk with data sources, persist state, and provide bindings that view models can bind to for the UI.
 
