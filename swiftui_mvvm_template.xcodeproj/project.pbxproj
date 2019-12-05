@@ -24,7 +24,6 @@
 		55575A26239357DD00C6E791 /* LogoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A25239357DD00C6E791 /* LogoutViewModel.swift */; };
 		55575A282393596800C6E791 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A272393596800C6E791 /* ProfileCoordinator.swift */; };
 		55575A3023938C9000C6E791 /* RoutingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55575A2F23938C9000C6E791 /* RoutingViewModelTests.swift */; };
-		55A20E1023951A92006D13A1 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A20E0F23951A92006D13A1 /* TestHelper.swift */; };
 		55A20E1423951AE6006D13A1 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A20E1323951AE6006D13A1 /* LoginViewModelTests.swift */; };
 		55A20E172395205C006D13A1 /* ProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A20E162395205C006D13A1 /* ProfileViewModelTests.swift */; };
 /* End PBXBuildFile section */
@@ -62,7 +61,6 @@
 		55575A2F23938C9000C6E791 /* RoutingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingViewModelTests.swift; sourceTree = "<group>"; };
 		55575A3123938C9000C6E791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556863252396754000322341 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		55A20E0F23951A92006D13A1 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		55A20E1323951AE6006D13A1 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		55A20E162395205C006D13A1 /* ProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				55575A3123938C9000C6E791 /* Info.plist */,
-				55A20E0F23951A92006D13A1 /* TestHelper.swift */,
 				55A20E1223951AD5006D13A1 /* LoginTests */,
 				55A20E152395204D006D13A1 /* ProfileTests */,
 				55A20E1123951A9A006D13A1 /* RoutingTests */,
@@ -342,7 +339,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55A20E1423951AE6006D13A1 /* LoginViewModelTests.swift in Sources */,
-				55A20E1023951A92006D13A1 /* TestHelper.swift in Sources */,
 				55A20E172395205C006D13A1 /* ProfileViewModelTests.swift in Sources */,
 				55575A3023938C9000C6E791 /* RoutingViewModelTests.swift in Sources */,
 			);

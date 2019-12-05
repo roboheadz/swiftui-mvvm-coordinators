@@ -14,37 +14,54 @@ import Combine
 class RoutingViewModelTests: XCTestCase {
     
     func testRoutingLoggedOut() {
+        // Given
         let services = AppServices()
         let viewModel = RoutingViewModel(services: services)
+        var cancellables: Set<AnyCancellable> = []
+
+        services.dataManager.loggedIn = true
+        viewModel.loggedIn = true
         
-        // Given
-        XCTAssertFalse(viewModel.loggedIn)
+        let loggedInExpectation = self.expectation(description: "View Model Logged in = false")
+        
+        cancellables.insert(
+            viewModel.$loggedIn.sink { (value) in
+                if value == false {
+                    loggedInExpectation.fulfill()
+                }
+            }
+        )
         
         // When
         services.dataManager.loggedIn = false
-
-        // Wait for the messages to be recieved
-        TestHelper.waitForMainLoop(0.1)
         
         // Then
-        XCTAssertFalse(viewModel.loggedIn)
+        waitForExpectations(timeout: 3)
     }
     
     func testRoutingLoggedIn() {
         let services = AppServices()
         let viewModel = RoutingViewModel(services: services)
+        var cancellables: Set<AnyCancellable> = []
 
         // Given
         XCTAssertFalse(viewModel.loggedIn)
-
-        // When
-        services.dataManager.loggedIn = true
         
-        // Wait for the messages to be recieved
-        TestHelper.waitForMainLoop(0.1)
-
+        let loggedInExpectation = self.expectation(description: "View Model Logged in = true")
+        
+        cancellables.insert(
+            viewModel.$loggedIn.sink { (value) in
+                if value == true {
+                    loggedInExpectation.fulfill()
+                }
+            }
+        )
+        
         // Then
-        XCTAssertTrue(viewModel.loggedIn)
+        services.dataManager.loggedIn = true
+    
+        // When
+        waitForExpectations(timeout: 3)
     }
     
 }
