@@ -7,6 +7,8 @@ A bare bones project, this illustrates how an app can be configured with global 
 
 This template developed by David Wood. It is supplied without any support or liability implied. PRs/suggestions are welcome, and David can be reached at https://twitter.com/davidgarywood
 
+⚠️ this is not production ready, and has plenty of hard edges to it. It breaks a lot of the fluidity that SwiftUI has and serves largely as an example of a potential approach. See https://github.com/roboheadz/SwiftUI-MVVM for newer examples.
+
 ## 🛠 Installation
 - Download or clone the git repo, and navigate to it's folder. Open the the Xcode project `swiftui_mvvm_template.xcodeproj`
 
